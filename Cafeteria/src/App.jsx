@@ -35,11 +35,11 @@ function App() {
 
       <main className="app__container">
         <header className="app__header">
-          <h1 className="app__title">Our Collection</h1>
+          <h1 className="app__title">Nuestra colección</h1>
           <p className="app__description">
-            Introducing our Coffee Collection, a selection of unique coffees
-            from different roast types and origins, expertly crafted to deliver
-            a premium coffee experience.
+            Presentamos nuestra Colección de Café, una selección
+            de cafés únicos de diferentes tuestes y orígenes, elaborados
+            por expertos para brindar una experiencia de café premium.
           </p>
 
           <FilterBar filter={filter} setFilter={setFilter} />
