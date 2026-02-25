@@ -5,13 +5,12 @@ function Card({ coffee }) {
 
   return (
     <div className="card">
-      {/* Imagen del café con badge Popular condicional */}
+      
       <div className="card__image-wrapper">
         <img src={image} alt={name} className="card__image" />
         {popular && <span className="card__badge">Popular</span>}
       </div>
 
-      {/* Info del café */}
       <div className="card__info">
         <div className="card__header">
           <h3 className="card__name">{name}</h3>

@@ -1,10 +1,5 @@
 import '../styles/CardSkeleton.css';
 
-/**
- * CardSkeleton - Estado de carga
- * Muestra una tarjeta "vacía" con animación shimmer
- * mientras el useEffect obtiene los datos de la API.
- */
 function CardSkeleton() {
   return (
     <div className="skeleton">
