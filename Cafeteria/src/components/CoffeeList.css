@@ -1,0 +1,51 @@
+/* ===== CoffeeList Component ===== */
+
+/* Grid de tarjetas */
+.coffee-list__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+}
+
+/* Empty State */
+.coffee-list__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  text-align: center;
+  gap: 8px;
+}
+
+.coffee-list__empty-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.coffee-list__empty-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FEF7EE;
+  margin: 0;
+}
+
+.coffee-list__empty-subtext {
+  font-size: 14px;
+  color: #6F757C;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .coffee-list__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .coffee-list__grid {
+    grid-template-columns: 1fr;
+  }
+}

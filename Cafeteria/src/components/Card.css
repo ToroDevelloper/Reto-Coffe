@@ -1,0 +1,100 @@
+/* ===== Card Component ===== */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Imagen */
+.card__image-wrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Badge "Popular" */
+.card__badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #F6C768;
+  color: #111315;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+/* Info */
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FEF7EE;
+  margin: 0;
+}
+
+.card__price {
+  background-color: #BEE3CC;
+  color: #111315;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Footer (rating + sold out) */
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card__star {
+  width: 16px;
+  height: 16px;
+}
+
+.card__rating-value {
+  font-size: 12px;
+  font-weight: 700;
+  color: #FEF7EE;
+}
+
+.card__votes {
+  font-size: 12px;
+  color: #6F757C;
+}
+
+.card__sold-out {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ED735D;
+}
