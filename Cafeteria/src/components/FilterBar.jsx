@@ -7,13 +7,13 @@ function FilterBar({ filter, setFilter }) {
         className={`filter-bar__btn ${filter === 'all' ? 'filter-bar__btn--active' : ''}`}
         onClick={() => setFilter('all')}
       >
-        All Products
+      Todos los productos
       </button>
       <button
         className={`filter-bar__btn ${filter === 'available' ? 'filter-bar__btn--active' : ''}`}
         onClick={() => setFilter('available')}
       >
-        Available Now
+      Productos disponibles
       </button>
     </div>
   );
