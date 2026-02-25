@@ -1,6 +1,6 @@
 import Card from './Card';
 import CardSkeleton from './CardSkeleton';
-import './CoffeeList.css';
+import '../styles/CoffeeList.css';
 
 /**
  * CoffeeList - Componente de listado

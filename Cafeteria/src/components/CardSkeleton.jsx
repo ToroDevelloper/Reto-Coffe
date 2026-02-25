@@ -1,4 +1,4 @@
-import './CardSkeleton.css';
+import '../styles/CardSkeleton.css';
 
 /**
  * CardSkeleton - Estado de carga

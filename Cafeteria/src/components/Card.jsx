@@ -1,6 +1,7 @@
-import './Card.css';
+import '../styles/Card.css';
 
 function Card({ coffee }) {
+  // some JSON entries use "votes" so match that key name
   const { name, image, price, rating, votes, popular, available } = coffee;
 
   return (

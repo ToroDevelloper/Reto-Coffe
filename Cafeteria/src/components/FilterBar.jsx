@@ -1,4 +1,4 @@
-import './FilterBar.css';
+import '../styles/FilterBar.css';
 
 /**
  * FilterBar - Componente de filtrado
