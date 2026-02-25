@@ -1,4 +1,17 @@
-/* ===== App Layout ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 .app {
   min-height: 100vh;
@@ -9,7 +22,7 @@
   padding: 60px 16px;
 }
 
-/* Fondo decorativo */
+
 .app__bg {
   position: absolute;
   top: 0;
@@ -20,7 +33,7 @@
   background: linear-gradient(135deg, #2C1A0E 0%, #4A2C17 50%, #1B1D1F 100%);
 }
 
-/* Contenedor principal */
+
 .app__container {
   position: relative;
   z-index: 1;
@@ -36,7 +49,6 @@
   gap: 32px;
 }
 
-/* Header (título + descripción + filtro) */
 .app__header {
   text-align: center;
   max-width: 500px;
@@ -56,7 +68,7 @@
   margin: 0 0 20px 0;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .app__container {
     padding: 32px 16px;
@@ -71,29 +83,6 @@
     font-size: 13px;
   }
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
