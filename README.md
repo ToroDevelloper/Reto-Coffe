@@ -36,7 +36,7 @@ Sigue estos pasos para instalar y correr el proyecto localmente:
 
 ## 👥 Integrantes del equipo
 
-*   [angel Ivan Toro Caicedo]
+*   [Angel Ivan Toro Caicedo]
 *   [Jeferson Andres Jansasoy Muños]
 
 ---
