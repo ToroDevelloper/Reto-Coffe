@@ -2,16 +2,7 @@ import Card from './Card';
 import CardSkeleton from './CardSkeleton';
 import '../styles/CoffeeList.css';
 
-/**
- * CoffeeList - Componente de listado
- * Solo se encarga de RENDERIZAR la lista. No tiene estado propio.
- *
- * Props:
- * @param {Array}   coffees  - Lista de cafés ya filtrada (viene del padre)
- * @param {boolean} loading  - Si los datos aún se están cargando
- */
 function CoffeeList({ coffees, loading }) {
-  // 🔄 Skeleton Loading: mientras loading=true, mostramos 6 tarjetas "vacías"
   if (loading) {
     return (
       <div className="coffee-list__grid">
@@ -22,7 +13,6 @@ function CoffeeList({ coffees, loading }) {
     );
   }
 
-  // 📭 Empty State: si el filtro no devuelve resultados
   if (coffees.length === 0) {
     return (
       <div className="coffee-list__empty">
@@ -37,7 +27,6 @@ function CoffeeList({ coffees, loading }) {
     );
   }
 
-  // ✅ Renderizado normal: mapear cada café a un componente Card
   return (
     <div className="coffee-list__grid">
       {coffees.map((coffee) => (
