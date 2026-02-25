@@ -1,7 +1,6 @@
 import '../styles/Card.css';
 
 function Card({ coffee }) {
-  // some JSON entries use "votes" so match that key name
   const { name, image, price, rating, votes, popular, available } = coffee;
 
   return (
@@ -20,7 +19,6 @@ function Card({ coffee }) {
         </div>
 
         <div className="card__footer">
-          {/* Rating: si existe mostramos estrella llena, si no, estrella vacía */}
           <div className="card__rating">
             {rating ? (
               <>
@@ -30,7 +28,7 @@ function Card({ coffee }) {
                   className="card__star"
                 />
                 <span className="card__rating-value">{rating}</span>
-                <span className="card__votes">({votes} votes)</span>
+                <span className="card__votes">({votes} votos)</span>
               </>
             ) : (
               <>
@@ -39,13 +37,12 @@ function Card({ coffee }) {
                   alt="no rating"
                   className="card__star"
                 />
-                <span className="card__votes">No ratings</span>
+                <span className="card__votes">Sin calificar</span>
               </>
             )}
           </div>
 
-          {/* Estado de disponibilidad */}
-          {!available && <span className="card__sold-out">Sold out</span>}
+          {!available && <span className="card__sold-out">Agotado</span>}
         </div>
       </div>
     </div>

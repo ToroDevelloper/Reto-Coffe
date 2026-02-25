@@ -1,4 +1,4 @@
-/* ===== Card Component ===== */
+/* ===== Componente Card (Tarjeta) ===== */
 
 .card {
   display: flex;
@@ -21,7 +21,7 @@
   border-radius: 16px;
 }
 
-/* Badge "Popular" */
+/* Insignia "Popular" */
 .card__badge {
   position: absolute;
   top: 8px;
@@ -35,7 +35,7 @@
   text-transform: capitalize;
 }
 
-/* Info */
+/* Información */
 .card__info {
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@
   border-radius: 6px;
 }
 
-/* Footer (rating + sold out) */
+/* Pie (calificación + agotado) */
 .card__footer {
   display: flex;
   justify-content: space-between;
