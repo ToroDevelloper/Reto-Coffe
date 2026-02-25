@@ -29,8 +29,19 @@ function CoffeeList({ coffees, loading }) {
 
   return (
     <div className="coffee-list__grid">
-      {coffees.map((coffee) => (
-        <Card key={coffee.id} coffee={coffee} />
+      {coffees.map((cafe) => (
+        <Card
+          key={cafe.id}
+          cafe={{
+            nombre: cafe.name,
+            imagen: cafe.image,
+            precio: cafe.price,
+            calificacion: cafe.rating,
+            votos: cafe.votes,
+            popular: cafe.popular,
+            disponible: cafe.available
+          }}
+        />
       ))}
     </div>
   );

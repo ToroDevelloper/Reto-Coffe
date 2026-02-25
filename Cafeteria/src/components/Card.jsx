@@ -1,39 +1,39 @@
 import '../styles/Card.css';
 
-function Card({ coffee }) {
-  const { name, image, price, rating, votes, popular, available } = coffee;
+function Card({ cafe }) {
+  const { nombre, imagen, precio, calificacion, votos, popular, disponible } = cafe;
 
   return (
     <div className="card">
       
       <div className="card__image-wrapper">
-        <img src={image} alt={name} className="card__image" />
+        <img src={imagen} alt={nombre} className="card__image" />
         {popular && <span className="card__badge">Popular</span>}
       </div>
 
       <div className="card__info">
         <div className="card__header">
-          <h3 className="card__name">{name}</h3>
-          <span className="card__price">{price}</span>
+          <h3 className="card__name">{nombre}</h3>
+          <span className="card__price">{precio}</span>
         </div>
 
         <div className="card__footer">
           <div className="card__rating">
-            {rating ? (
+            {calificacion ? (
               <>
                 <img
                   src="/star-fill.svg"
-                  alt="rating"
+                  alt="calificacion"
                   className="card__star"
                 />
-                <span className="card__rating-value">{rating}</span>
-                <span className="card__votes">({votes} votos)</span>
+                <span className="card__rating-value">{calificacion}</span>
+                <span className="card__votes">({votos} votos)</span>
               </>
             ) : (
               <>
                 <img
                   src="/star-empty.svg"
-                  alt="no rating"
+                  alt="sin calificacion"
                   className="card__star"
                 />
                 <span className="card__votes">Sin calificar</span>
@@ -41,7 +41,7 @@ function Card({ coffee }) {
             )}
           </div>
 
-          {!available && <span className="card__sold-out">Agotado</span>}
+          {!disponible && <span className="card__sold-out">Agotado</span>}
         </div>
       </div>
     </div>
