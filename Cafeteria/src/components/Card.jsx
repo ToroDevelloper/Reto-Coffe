@@ -6,19 +6,19 @@ function Card({ cafe }) {
   return (
     <div className="card">
       
-      <div className="card__image-wrapper">
-        <img src={imagen} alt={nombre} className="card__image" />
-        {popular && <span className="card__badge">Popular</span>}
+      <div className="card__contenedor-imagen">
+        <img src={imagen} alt={nombre} className="card__imagen" />
+        {popular && <span className="card__popular">Popular</span>}
       </div>
 
       <div className="card__info">
-        <div className="card__header">
-          <h3 className="card__name">{nombre}</h3>
-          <span className="card__price">{precio}</span>
+        <div className="card__encabezado">
+          <h3 className="card__nombre">{nombre}</h3>
+          <span className="card__precio">{precio}</span>
         </div>
 
-        <div className="card__footer">
-          <div className="card__rating">
+        <div className="card__pie-pagina">
+          <div className="card__clasificacion">
             {calificacion ? (
               <>
                 <img
@@ -26,8 +26,8 @@ function Card({ cafe }) {
                   alt="calificacion"
                   className="card__star"
                 />
-                <span className="card__rating-value">{calificacion}</span>
-                <span className="card__votes">({votos} votos)</span>
+                <span className="card__calificar">{calificacion}</span>
+                <span className="card__votos">({votos} votos)</span>
               </>
             ) : (
               <>
@@ -36,12 +36,12 @@ function Card({ cafe }) {
                   alt="sin calificacion"
                   className="card__star"
                 />
-                <span className="card__votes">Sin calificar</span>
+                <span className="card__votos">Sin calificar</span>
               </>
             )}
           </div>
 
-          {!disponible && <span className="card__sold-out">Agotado</span>}
+          {!disponible && <span className="card__agotado">Agotado</span>}
         </div>
       </div>
     </div>
